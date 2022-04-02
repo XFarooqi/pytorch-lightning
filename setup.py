@@ -29,6 +29,7 @@ def _load_py_module(fname, pkg="pytorch_lightning"):
     py = module_from_spec(spec)
     spec.loader.exec_module(py)
     return py
+    print("Hello World")
 
 
 about = _load_py_module("__about__.py")
